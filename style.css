@@ -517,3 +517,15 @@ h6 {
   font-size: 40px;
   padding-top: 10px;
 }
+
+::-webkit-scrollbar {
+  width: 20px;
+}
+
+::-webkit-scrollbar-track {
+  background: white;
+}
+
+::-webkit-scrollbar-thumb {
+  background: red;
+}
