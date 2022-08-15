@@ -450,6 +450,12 @@
   }
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 p {
   color: white;
 }
@@ -517,6 +523,121 @@ h6 {
   font-size: 40px;
   padding-top: 10px;
 }
+
+#butpro {
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 5px 30px;
+  align-items: center;
+  float: right;
+  margin-top: 7px;
+  transition: .5s;
+}
+
+#butpro:hover {
+  color: orange;
+  letter-spacing: .13em;
+  text-shadow: 0 0 5px orange;
+}
+
+#butpro span {
+  position: absolute;
+  display: block;
+  background: orange;
+}
+
+#butpro span:nth-child(1) {
+  left: 0;
+  top: 0;
+  width: 51%;
+  height: 1.5px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+#butpro:hover span:nth-child(1) {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
+#butpro span:nth-child(2) {
+  right: 0;
+  top: 0;
+  width: 51%;
+  height: 1.5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+}
+#butpro:hover span:nth-child(2) {
+  transform: scaleX(1);
+  transform-origin: left;
+
+}
+
+#butpro span:nth-child(3) {
+  right: 0;
+  top: 0;
+  width: 1.5px;
+  height: 100%;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform .5s;
+  transition-delay: .4s;
+}
+#butpro:hover span:nth-child(3) {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+#butpro span:nth-child(4) {
+  left: 0;
+  top: 0;
+  width: 1.5px;
+  height: 100%;
+  transform-origin: bottom;
+  transform: scaleY(0);
+  transition: transform .5s;
+  transition-delay: .4s;
+}
+#butpro:hover span:nth-child(4) {
+  transform: scaleY(1);
+  transform-origin: top;
+}
+
+#butpro span:nth-child(5) {
+  left: 0;
+  bottom: 0;
+  width: 51%;
+  height: 1.5px;
+  transform-origin: right;
+  transform: scaleX(0);
+  transition: transform .5s;
+  transition-delay: .5s;
+}
+#butpro:hover span:nth-child(5) {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+#butpro span:nth-child(6) {
+  right: 0;
+  bottom: 0;
+  width: 51%;
+  height: 1.5px;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform .5s;
+  transition-delay: .5s;
+}
+#butpro:hover span:nth-child(6) {
+  transform: scaleX(1);
+  transform-origin: right;
+}
+
 
 ::-webkit-scrollbar {
   width: 20px;
